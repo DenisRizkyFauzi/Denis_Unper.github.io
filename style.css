@@ -1,0 +1,723 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar styling */
+
+.denis_navbar {
+    
+    transition: background-color 0.5s;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+ 
+  
+}
+.denis_menu {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    margin-right: 20px;
+    color: white;
+
+}
+.denis_menu a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+.denis_menu li {
+    list-style: none;
+    
+}
+.denis_navbar .denis_menu .denis_dropdown {
+    display: none;
+  
+}
+.denis_navbar ul li:hover .denis_dropdown {
+    display: block;
+    position: absolute;
+    
+    
+
+}
+
+
+
+.denis_navbar a:hover {
+    color: rgb(240, 255, 25);
+    background-color: #33802c; 
+}
+
+
+
+/* Slideshow styling */
+.denis_slideshow_container {
+    position: relative;
+    max-width: 100%;
+}
+
+.denis_mySlides {
+    display: none;
+}
+.denis_mySlides img {
+    width: 100%; 
+    height: 400px; 
+}
+
+
+.denis-content-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.denis_content {
+    flex: 0 0 calc(33%); 
+    margin-bottom: 300px;
+    padding: 0px;
+    border: 1px solid#33802c;
+    box-sizing: border-box;
+    text-align: center;
+    height: 610px;
+    background-color: #33802c;
+}
+
+.denis_teks {
+    margin-top: 10px;
+    text-align: left;
+    color: #5e5c5c;
+}
+.denis_teks b {
+   
+    color: #0c0c0c;
+}
+.denis_teks a{
+    text-decoration: none;
+    color: #0c0c0c;
+    margin-left: 100px;
+}
+
+.denis_logoh2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    margin-left: 80px;
+}
+
+.denis_content2 {
+    display: flex; 
+}
+
+.denis_vidio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px; 
+}
+.denis_berita {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px; 
+}
+.denis_split_hr1 {
+    width: 100%; 
+    border: none; 
+    border-top: 5px solid #33802c;
+    margin: 10px auto;
+    
+    
+}
+.denis_split_hr2 {
+    width: 100%; 
+    border: none; 
+    border-top: 5px solid #33802c;
+    margin: 10px auto; 
+  
+    
+}
+.denis_image_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.denis_image_with_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+.denis_number {
+
+    border: 1px solid rgb(172, 172, 172);
+    box-shadow: 5px 5px 5px #888888;
+    padding: 0px; 
+    text-align: center; 
+    position: relative;
+    text-decoration: none;
+   width: 430px;
+   height: 400px;
+
+}
+.denis_number a{
+    text-decoration: none;
+    color: #0c0c0c;
+}
+
+.denis_number::before {
+    content: "1"; 
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.denis_number2 {
+
+    border: 1px solid rgb(172, 172, 172);
+    box-shadow: 5px 5px 5px #888888;
+    padding: 0px; 
+    text-align: center; 
+    position: relative;
+    text-decoration: none;
+    width: 430px;
+   height: 400px;
+    
+}
+.denis_number2 a{
+    text-decoration: none;
+    color: #0c0c0c;
+}
+
+.denis_number2::before {
+    content: "2"; 
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.denis_footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #757575;
+  }
+
+  .denis_footer_logo {
+    width: 50px; 
+    height: auto; 
+  }
+
+  .denis_footer_social
+  {
+    display: flex;
+    text-align: center;
+   margin-right: 100px;
+    color: white;
+  }
+  
+  
+  .denis_footer_social a {
+    margin-right: 10px; /* Jarak antara setiap ikon */
+    text-decoration: none;
+    color: #333; 
+  }
+
+  .denis_vertical-line1 {
+    height: 250px;
+    border-left: 2px solid #ffffff; 
+
+    margin-left: 200px;
+  }
+  .denis_vertical-line2 {
+    height: 250px;
+    border-left: 2px solid #ffffff; 
+ 
+    margin-left: 50px;
+   
+  }
+
+  .denis_kontak p {
+    display: flex;
+    color: white;
+   
+  }
+  .denis_kontak img {
+    margin-right: 5px;
+  }
+
+  
+  
+  /*buku_tamu.html */
+  .denis_kontak_form,
+.denis_hasil {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+ 
+ 
+/*berita1*/
+#denis_main {
+    display: flex;
+    justify-content: center;
+}
+
+.denis_isi_berita {
+    max-width: 900px; 
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 10px; 
+    text-align: left; 
+    margin: 0; 
+}
+
+.denis_isi_berita img {
+    width: 100%; 
+    height: auto; 
+}
+
+/* unper.html */
+
+.denis_tentang_unper {
+    background-image: url('img/2.png'); 
+    background-size: cover; 
+    background-position: center; 
+    
+    padding: 50px; 
+    text-align: center; 
+font-size: 18px;
+    height: 500px;
+    opacity: 0.8; 
+
+}
+.denis_tentang_unper p{
+font-weight: 900;
+    color: rgb(0, 0, 0); /* Warna teks */
+}
+.denis_tentang_isi {
+    display: flex;
+    justify-content: space-around;
+ 
+    align-items: flex-start; /* Mengatur elemen anak agar rata di bagian atas */
+}
+.denis_visi
+{
+    flex: 1;
+ height: 400px;
+    background-color: rgb(240, 255, 25);
+    text-align: center;
+    color: black    
+
+}
+
+ .denis_misi {
+    flex: 1;
+   text-align: left;
+    background-color:#33802c;
+    text-align: center;
+    height: 400px;
+    color: black
+}
+
+/* prodi.html*/
+
+.denis_prodi {
+    max-width: 800px;
+    margin: 2em auto;
+    background-color: white;
+    padding: 2em;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.denis_prodi:hover {
+    transform: scale(1.02);
+}
+
+.denis_prodi h2 {
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+}
+
+.denis_prodi p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.denis_program_list {
+    display: none;
+    padding-top: 1em;
+}
+
+.denis_program_list h3 {
+    color: #333;
+}
+.denis_sidebar {
+    height: 1400px;
+    width: 250px;
+    position: absolute;
+   background-image: url('img/sidebarfakultas.png');
+    overflow-x: hidden;
+
+    background-color: #333;
+    color: white;
+}
+
+.denis_left_sidebar {
+    left: 0;
+}
+
+
+.denis_right_sidebar {
+    right: 0;
+}
+
+
+
+
+/* UKM.html */
+
+.denis_ukm{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 2em;
+}
+
+.denis_ukm_card {
+    max-width: 300px;
+    margin: 1em;
+    background-color: rgba(54, 53, 53, 0.171);
+    padding: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.denis_ukm_card:hover {
+    transform: scale(1.05);
+}
+
+/* pengumuman.html */
+
+.denis_pengumuman {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+
+
+#denis_pengumuman_section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.denis_isi_pengumuman {
+    width: 300px;
+    margin-bottom:100px;
+    margin-top:  100px;
+  
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.denis_isi_pengumuman:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.denis_isi_pengumuman img {
+    max-width: 100%;
+    border-radius: 6px;
+}
+
+.denis_isi_pengumuman h2 {
+    margin-top: 10px;
+}
+
+.denis_isi_pengumuman p {
+    margin-top: 5px;
+    color: #666;
+}
+
+
+
+   
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+    
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  @media screen and (max-width: 600px) {
+    .denis_menu {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+    }
+    .denis_sidebar {
+    display: none;
+    }
+
+    
+   
+    
+    .denis_mySlides img {
+        width: 100%; 
+        height: 200px; 
+    }
+.denis_content2 {
+    display: flex; 
+    flex-direction: column; 
+}
+.denis_footer {
+    flex-direction: column;
+    align-items: center;
+}
+
+.denis_kontak {
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+}
+.denis_kontak p{
+    margin-left: 45px;
+    
+}
+
+
+
+.denis_footer_social {
+    margin-right: 0; 
+    text-align: center;
+}
+
+.denis_footer_social a {
+    margin: 0 10px;
+}
+.denis_footer_logo {
+    
+    margin-right: 250px;
+}
+.denis_vertical-line1 {
+   margin-right: 200px;
+   height: 50px;
+  }
+  .denis_vertical-line2 {
+    margin-left: 20px;
+    height: 50px;
+   }
+
+   
+  
+  /* unper.html */
+.denis_visi, .denis_misi {
+    width: 100%; 
+    height: 1000px;
+   
+}
+  .denis_tentang_unper {
+  
+font-size: 10px;
+  
+}
+
+/* berita index.html */
+.denis_number {
+
+    border: 1px solid rgb(172, 172, 172);
+    box-shadow: 5px 5px 5px #888888;
+    padding: 0px; 
+    text-align: center; 
+    position: relative;
+    text-decoration: none;
+   width: 200px;
+   height: 650px;
+}
+
+.denis_number2 {
+
+    border: 1px solid rgb(172, 172, 172);
+    box-shadow: 5px 5px 5px #888888;
+    padding: 0px; 
+    text-align: center; 
+    position: relative;
+    text-decoration: none;
+   width: 200px;
+   height: 650px;
+}
+} 
